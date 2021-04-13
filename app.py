@@ -7,7 +7,7 @@ full_node = 'https://api.trongrid.io'
 solidity_node = 'https://api.trongrid.io'
 event_server = 'https://api.trongrid.io'
 
-PK = "af1bc382b5cffab7f2001ff0cbd9eab07193380bdf135881fe608eeda27ac1e1"
+PK = "cc68bd024f7d3166d310e552f1525d981bc0bb4dda3559b853be5882986b661e"
 
 tron = Tron(full_node=full_node,
     solidity_node=solidity_node,
@@ -22,7 +22,7 @@ setTronPK(PK)
 app = Flask(__name__)
 
 def myfunc(add):
-  txn = tron.trx.send_token(PA, 10*100000*6, "1003134");
+  txn = tron.trx.send_token(PA, 10*100000*6, "1000088");
   return "ok"
  
 app.route('/')
